@@ -1,0 +1,200 @@
+*{
+    font-family: "poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+
+}
+.logo img{
+    height: 60px;
+    width: auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.heroimage img{
+     background-color: brown;
+    max-width: 400px;
+     height: auto;
+     margin-right: 30px;
+     border-radius: 30px;
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     -ms-border-radius: 30px;
+     -o-border-radius: 30px;
+} 
+
+.grid-two-cols{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    padding: 10px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.navbar{
+    /* margin:10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #8d493a;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.navbar :where(#menu-close-button,#menu-open-button){
+    display: none;
+}
+.navlist{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 25px;
+  
+    .listitem{
+        padding: 10px;
+        border: none;
+        background-color: transparent;
+        transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        border-radius: 30px;
+        
+}
+    .listitem:hover{
+       
+        background-color: #E5BA41;
+       
+       
+}
+
+    
+
+    
+}
+.herosection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: #8d493a;
+    
+    min-height: 100vh;
+    
+    
+}
+.herocontent .heroheading{
+    
+    font-family: "Pacifico", cursive;
+    /* color: yellow; */
+    color: #E5BA41;
+    font-size: 32px;
+    /* padding: 10px; */
+}
+.herocontent .subheading{
+    font-size: 32px;
+    color:white;
+}
+p{
+    color:white;
+    /* padding: 10px; */
+    margin-top: 20px;
+    /* text-align: center; */
+    word-spacing: 1.5;
+    font-size: 18px;
+}
+.herobuttons{
+   display: flex;
+    gap: 20px;
+    margin-top:30px;
+}
+
+.herobutton{
+     
+    border: solid 2px white;
+    border-radius: 30px;
+    width: 130px;
+    padding:7px;
+    background-color:transparent;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.herobutton:hover{
+    background-color: white;
+   
+    a{
+        color: black;
+    }
+}
+.fa-solid{
+    width: 30px;
+    height: 20px;
+    /* align-items: center; */
+    padding: 5px;
+}
+    
+/* responsive media queries*/
+@media  screen and (max-width: 900px) {
+    .navbar .navlist {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background-color: white;
+        color: black;
+        transition: left 0.4s ease;
+        -webkit-transition: left 0.4s ease;
+        -moz-transition: left 0.4s ease;
+        -ms-transition: left 0.4s ease;
+        -o-transition: left 0.4s ease;
+}
+    .navbar .navlist a{
+        color: black;
+    }
+    .navbar :where(#menu-close-button,#menu-open-button){
+        display: block;
+        font-size: 18px;
+
+    }
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        background-color: white;
+        border: none;
+    }
+     .navbar #menu-open-button {
+        /* color: black; */
+        background-color: white;
+        border: none;
+
+     }
+        
+body.show-mobile-menu .navbar .navlist{
+    left: 0;
+
+}
+}
