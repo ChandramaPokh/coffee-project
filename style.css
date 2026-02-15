@@ -39,13 +39,13 @@ a{
     text-decoration: none;
 }
 .navbar{
-    /* margin:10px; */
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     background-color: #8d493a;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 5;
 }
@@ -76,29 +76,23 @@ a{
        
        
 }
-
-    
-
-    
 }
 .herosection{
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    /* align-items: center;  */
     background-color: #8d493a;
-    
     min-height: 100vh;
     
+    padding: 30px 20px 20px;
+    padding-top: 70px;
     
 }
+
 .herocontent .heroheading{
-    
     font-family: "Pacifico", cursive;
-    /* color: yellow; */
     color: #E5BA41;
     font-size: 32px;
-    /* padding: 10px; */
 }
 .herocontent .subheading{
     font-size: 32px;
@@ -117,7 +111,6 @@ p{
     gap: 20px;
     margin-top:30px;
 }
-
 .herobutton{
      
     border: solid 2px white;
@@ -152,6 +145,9 @@ p{
     
 /* responsive media queries*/
 @media  screen and (max-width: 900px) {
+    /* *{
+        box-sizing: border-box;
+    } */
     .navbar .navlist {
         display: block;
         position: fixed;
@@ -173,7 +169,7 @@ p{
 }
     .navbar .navlist a{
         color: black;
-    }
+     } 
     .navbar :where(#menu-close-button,#menu-open-button){
         display: block;
         font-size: 18px;
@@ -187,8 +183,8 @@ p{
         border: none;
     }
      .navbar #menu-open-button {
-        /* color: black; */
-        background-color: white;
+      
+        /* background-color: white; */
         border: none;
 
      }
@@ -197,4 +193,38 @@ body.show-mobile-menu .navbar .navlist{
     left: 0;
 
 }
+.herosection {
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    /* margin: 30px; */
+    padding: 30px 20px 20px;
 }
+.heroimage img{
+    max-width: 300px;
+    margin-right:0;
+}
+.herosection .herocontent .herobuttons{
+    justify-content: center;
+}
+.herosection .herocontent .heroheading, .subheading{
+    max-width: 100%;
+}
+
+
+
+}
+    
+   
+    
+
+    
+
+    
+    
+    
+    
+    
+
