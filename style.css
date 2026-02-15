@@ -17,7 +17,8 @@
 }
 
 .heroimage img{
-     background-color: brown;
+     /* background-color:#8d493a; */
+     background-color: #A03A13;
     max-width: 400px;
      height: auto;
      margin-right: 30px;
@@ -44,7 +45,8 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #8d493a;
+    /* background-color: #8d493a; */
+    background-color: #A03A13;
     /* position: fixed; */
     width: 100%;
     z-index: 5;
@@ -81,7 +83,8 @@ a{
     display: flex;
     justify-content: center;
     /* align-items: center;  */
-    background-color: #8d493a;
+    /* background-color: #8d493a; */
+    background-color: #A03A13;
     min-height: 100vh;
     
     padding: 30px 20px 20px;
@@ -142,13 +145,51 @@ p{
     /* align-items: center; */
     padding: 5px;
 }
+/* section about  */
+.section-content{
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.about-section{
+    padding: 100px 0px;
+    background-color: #FDEDED;
+    
+
+}
+.about-section .section-content{
+    display: flex;
+    gap: 60px;
+}
+.about-section .about-image-wrapper .about-image{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.about-section .text{
+    color: black;
+}
+.social-link-list a{
+    color:black;
+}
+.fa-brands{
+    font-size: 30px;
+    /* color: #4988C4; */
+    color: black;
+}
+
+    
+
+    
     
 /* responsive media queries*/
-@media  screen and (max-width: 900px) {
-    /* *{
-        box-sizing: border-box;
-    } */
-    .navbar .navlist {
+@media screen and (max-width: 900px) 
+    {
+.navbar .navlist{
         display: block;
         position: fixed;
         left: -300px;
@@ -166,7 +207,7 @@ p{
         -moz-transition: left 0.4s ease;
         -ms-transition: left 0.4s ease;
         -o-transition: left 0.4s ease;
-}
+ }
     .navbar .navlist a{
         color: black;
      } 
@@ -209,13 +250,17 @@ body.show-mobile-menu .navbar .navlist{
 .herosection .herocontent .herobuttons{
     justify-content: center;
 }
-.herosection .herocontent .heroheading, .subheading{
+.herosection .herocontent .heroheading{
     max-width: 100%;
 }
 
-
-
 }
+
+
+
+
+
+
     
    
     
@@ -228,3 +273,5 @@ body.show-mobile-menu .navbar .navlist{
     
     
 
+
+ 
