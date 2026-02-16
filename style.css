@@ -158,12 +158,14 @@ p{
 }
 .about-section .section-content{
     display: flex;
+    /* flex-direction: column-reverse; */
     gap: 60px;
 }
 .about-section .about-image-wrapper .about-image{
     width: 400px;
     height: 400px;
     border-radius: 50%;
+    object-fit: cover;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -172,7 +174,7 @@ p{
 .about-section .section-title{
     font-size: 26px;
     text-align: center;
-    padding: 60px 0 10px;
+    padding: 30px 0 10px;
     text-transform: uppercase;
 }
 .about-section .section-title::after{
@@ -194,12 +196,15 @@ p{
     gap: 25px;
     color: black;
 }
+.about-section .about-details{
+    max-width: 50%;
+}
 .about-section .about-details .social-link-list .social-link{
-    transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
+    transition: transform 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
     color: black;
 }
 .fa-brands{
@@ -208,9 +213,9 @@ p{
 
 .about-section .about-details .social-link-list .social-link:hover{
     color: #E5BA41;
-    /* rotate: 360; */
-
 }
+
+    
 
 
 
@@ -289,7 +294,41 @@ body.show-mobile-menu .navbar .navlist{
 .herosection .herocontent .heroheading{
     max-width: 100%;
 }
+/* for section about */
 
+.about-section .section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.about-section .about-image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section .about-image-wrapper .about-image{
+    width: 100%;
+    width: 100%;
+    max-width: 280px;
+    max-height: 280px;
+    border-radius: 50%;
+    /* aspect-ratio: 1; */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.about-section .about-details .social-link-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section .about-details,.herosection .herocontent{
+    max-width: 100%;
+
+}
 }
 
 
