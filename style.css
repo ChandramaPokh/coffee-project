@@ -186,7 +186,7 @@ a{
     width: 100px;
     height: 5px;
     display: block;
-    margin: 10px auto 0;
+    margin: 30px auto 0;
     background-color: #E5BA41;
 }
  .about-section .about-details .text{
@@ -228,9 +228,13 @@ a{
 }
 .menu-section .section-content .menu-list{
      display: flex; 
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 110px;
+}
+.menu-section .section-content .menu-list .menu-item .name{
+    padding: 12px;
+    font-size: 20px;
 }
 .menu-section .section-content .menu-list .menu-item{
     display: flex;
@@ -241,19 +245,46 @@ a{
     width: calc(100% / 3 - 110px);
 }
 .menu-section .section-content .menu-list .menu-item img{
-    max-width: 70%; 
+    max-width: 83%; 
     /* width: 10px; */
     aspect-ratio: 1;
     /* background-color: black; */
     /* display: none; */
 
  }  
+ .menu-section{
+    background-color: #0F0E0E;
+    background-color: #222222;
+    color: white;
+    padding: 50px 0 100px;
+ }
+ .menu-section .section-content{
+    margin-top: 60px;
+ }
 
 
 
 
     
+@media screen and (max-width: 1024px){
+    .menu-section  .menu-list{
+        gap: 60px;
+    }
+.menu-section .section-content .menu-list .menu-item{
+    width: calc(100% / 3 - 60px);
 
+}
+}
+@media screen and (max-width: 900px) {
+    .menu-section  .menu-list{
+        gap: 60px;
+    }
+    .menu-section .section-content .menu-list .menu-item{
+    width: 100%;
+
+}
+
+}
 
 
 
@@ -366,6 +397,17 @@ body.show-mobile-menu .navbar .navlist{
     max-width: 100%;
 
 }
+.menu-section  .menu-list{
+        gap: 30px;
+    }
+.menu-section .section-content .menu-list .menu-item{
+    width: calc(100% / 2 - 30px);
+
+}
+.menu-section .section-content .menu-list .menu-item img{
+    max-width:200px;
+}
+
 }
 
 
