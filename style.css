@@ -175,13 +175,13 @@ a{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.about-section .section-title,.menu-section .section-title{
+.about-section .section-title,.menu-section .section-title, .testimonial-section .section-title{
     font-size: 26px;
     text-align: center;
     padding: 30px 0 10px;
     text-transform: uppercase;
 }
-.about-section .section-title::after,.menu-section .section-title::after{
+.about-section .section-title::after,.menu-section .section-title::after,.testimonial-section .section-title::after{
     content:"";
     width: 100px;
     height: 5px;
@@ -261,10 +261,47 @@ a{
  .menu-section .section-content{
     margin-top: 60px;
  }
+ /*  styling for testimonial section */
+ .testimonial-section {
+    padding: 80px 0 100px;
+    background-color: #FDEDED;
+
+ }
+ .testimonial-section .testimonial-list .user-image{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 50px
+}
+
+ .testimonial-section .testimonial-list .testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+}
+.testimonial-section .testimonial-list .testimonial .name{
+    margin-bottom: 16px;
+}
+
+.testimonial-section .testimonial-list .testimonial .feedback{
+    font-size: 18px;
+    line-height: 25px;
+}
 
 
 
 
+
+
+/* responsive media for 1024 px */
     
 @media screen and (max-width: 1024px){
     .menu-section  .menu-list{
@@ -275,6 +312,8 @@ a{
 
 }
 }
+
+/* responsive media  for 900px */
 @media screen and (max-width: 900px) {
     .menu-section  .menu-list{
         gap: 60px;
@@ -397,6 +436,7 @@ body.show-mobile-menu .navbar .navlist{
     max-width: 100%;
 
 }
+/* for menu section */
 .menu-section  .menu-list{
         gap: 30px;
     }
